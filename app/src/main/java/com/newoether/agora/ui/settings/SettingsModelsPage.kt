@@ -77,6 +77,7 @@ private val RemoteModelProviders = listOf(
     Constants.PROVIDER_GROQ,
     Constants.PROVIDER_OLLAMA,
     Constants.PROVIDER_OPEN_ROUTER,
+    Constants.PROVIDER_OPENCODE_GO,
 )
 
 internal data class ModelProviderGroup(

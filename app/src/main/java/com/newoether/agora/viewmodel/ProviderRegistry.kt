@@ -12,6 +12,7 @@ import com.newoether.agora.api.openai.CustomOpenAiProvider
 import com.newoether.agora.api.openai.DeepSeekProvider
 import com.newoether.agora.api.openai.GroqProvider
 import com.newoether.agora.api.openai.OpenAiProvider
+import com.newoether.agora.api.openai.OpenCodeGoProvider
 import com.newoether.agora.api.openai.OpenRouterProvider
 import com.newoether.agora.api.openai.QwenProvider
 import com.newoether.agora.data.CustomEndpointProtocol
@@ -139,6 +140,7 @@ class ProviderRegistry(
         Constants.PROVIDER_GROQ to GroqProvider(),
         Constants.PROVIDER_OLLAMA to OllamaProvider(),
         Constants.PROVIDER_OPEN_ROUTER to OpenRouterProvider(),
+        Constants.PROVIDER_OPENCODE_GO to OpenCodeGoProvider(),
         Constants.PROVIDER_LOCAL to localProvider
     )
 
