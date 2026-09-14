@@ -130,6 +130,7 @@ class ProviderRegistry(
     private val conversations: ConversationRepository,
     localProvider: LocalProvider,
     private val scope: CoroutineScope,
+    appVersion: String = "?",
 ) {
     private val builtInProviders: Map<String, LlmProvider> = mapOf(
         Constants.PROVIDER_GOOGLE to GeminiProvider(),
@@ -140,7 +141,7 @@ class ProviderRegistry(
         Constants.PROVIDER_GROQ to GroqProvider(),
         Constants.PROVIDER_OLLAMA to OllamaProvider(),
         Constants.PROVIDER_OPEN_ROUTER to OpenRouterProvider(),
-        Constants.PROVIDER_OPENCODE_GO to OpenCodeGoProvider(),
+        Constants.PROVIDER_OPENCODE_GO to OpenCodeGoProvider(appVersion),
         Constants.PROVIDER_LOCAL to localProvider
     )
 
